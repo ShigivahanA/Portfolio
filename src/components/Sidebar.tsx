@@ -31,7 +31,7 @@ export const Sidebar = () => {
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <div onClick={() => isMobile() && setOpen(true)}>
+            <div onClick={() => setOpen(true)}>
               <Badge href="/ShigivahanResume.pdf" text="Resume 👉🏻" />
             </div>
           </motion.div>
