@@ -7,7 +7,7 @@ Showcases **projects, certificates, about, contact**, and polished **UI/UX anima
 
 ## Live Demo
 
-[View Portfolio](https://portfolio.vercel.app/)  
+[View Portfolio](https://shigiportfolio.vercel.app/)  
 
 ---
 
