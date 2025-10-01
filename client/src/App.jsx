@@ -17,7 +17,6 @@ function App() {
         <Route path="/projects" element={<ProjectsList />} />
         <Route path="/certificates" element={<CertificatesList />} />
         <Route path="/projects/:id" element={<ProjectDetail />} />
-        <Route path="/certificates" element={<CertificatesList />} />
         <Route path="/certificates/:id" element={<CertificateDetail />} />
       </Routes>
     </Router>

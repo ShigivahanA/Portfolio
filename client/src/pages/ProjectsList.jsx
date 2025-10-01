@@ -3,9 +3,16 @@ import { motion } from "motion/react";
 import { projects } from "../assets/assets";
 import ProjectCard from "../components/ProjectCard";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const ProjectsList = () => {
   return (
+    <>
+    <Helmet>
+      <title>All Projects | Shigivahan Athithan</title>
+      <meta name="description" content="Browse all my software development and data projects, including full-stack apps, dashboards, AI tools, and more." />
+      <link rel="canonical" href="https://shigiportfolio.vercel.app/projects" />
+    </Helmet>
     <motion.section
       id="projects-list"
       initial={{ opacity: 0 }}
@@ -66,6 +73,7 @@ const ProjectsList = () => {
         </svg>
       </div>
     </motion.section>
+    </>
   );
 };
 

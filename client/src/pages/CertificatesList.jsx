@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { certificates } from "../assets/assets";
 import CertificateCard from "../components/CertificateCard";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const CertificatesList = () => {
 
@@ -12,6 +13,12 @@ const CertificatesList = () => {
 
 
   return (
+    <>
+    <Helmet>
+        <title>All Certificates | Shigivahan Athithan</title>
+        <meta name="description" content="Explore certifications in Data Science, Web Development, AI, Cloud Computing, and more." />
+        <link rel="canonical" href="https://shigiportfolio.vercel.app/certificates" />
+      </Helmet>
     <motion.section
       id="certificates-list"
       initial={{ opacity: 0 }}
@@ -59,6 +66,7 @@ const CertificatesList = () => {
         </svg>
       </div>
     </motion.section>
+    </>
   );
 };
 

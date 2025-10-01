@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { certificates } from "../assets/assets";
 import { motion } from "motion/react";
+import { Helmet } from "react-helmet-async";
 
 const CertificateDetail = () => {
   const { id } = useParams();
@@ -19,6 +20,12 @@ const CertificateDetail = () => {
   }
 
   return (
+    <>
+    <Helmet>
+        <title>{cert.title} | Certificate</title>
+        <meta name="description" content={`Certificate in ${cert.title}, issued by ${cert.issuer}. Skills gained: ${cert.skills?.join(", ")}`} />
+        <link rel="canonical" href={`https://shigiportfolio.vercel.app/certificates/${cert.id}`} />
+    </Helmet>
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -97,6 +104,7 @@ const CertificateDetail = () => {
         )}
       </div>
     </motion.section>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import { useParams, Link } from "react-router-dom";
 import { projects } from "../assets/assets";
 import { motion } from "motion/react";
+import { Helmet } from "react-helmet-async";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -23,6 +24,12 @@ const ProjectDetail = () => {
   }
 
   return (
+    <>
+    <Helmet>
+      <title>{project.title} | Project Details</title>
+      <meta name="description" content={`Details about the project "${project.title}". Tech stack: ${project.tech.join(", ")}.`} />
+      <link rel="canonical" href={`https://shigiportfolio.vercel.app/projects/${project.id}`} />
+    </Helmet>
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -113,6 +120,7 @@ const ProjectDetail = () => {
         </div>
       </div>
     </motion.section>
+    </>
   );
 };
 
