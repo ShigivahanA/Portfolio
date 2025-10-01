@@ -58,7 +58,7 @@ import aimp from './aimp.webp'
 import daworkshop from './daworkshop.webp'
 import db from './db.webp'
 import dynamicweb from './dynamicweb.webp'
-import GenAi from './GenAi.jpg'
+import GenAI from './GenAI.jpg'
 import GUVIpy from './GUVIpy.png'
 import htmlcss from './htmlcss.webp'
 import learnpython from './learnpython.webp'
@@ -393,7 +393,7 @@ export const certificates = [
   date:'2023-08-08',
   displaydate: "Aug 2023",
   expiry: null,
-  image: GenAi,
+  image: GenAI,
   details:
     "This certificate was awarded for successfully building a Generative AI Application during the Generative AI Mega Workshop, conducted exclusively for CCBP 4.0 Academy students and hosted by Mr. Rahul Attuluri, CEO of NxtWave.",
   skills: [

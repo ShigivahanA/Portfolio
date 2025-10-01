@@ -5,10 +5,9 @@ Showcases **projects, certificates, about, contact**, and polished **UI/UX anima
 
 ---
 
-## 🔗 Live Demo
+## Live Demo
 
-[View Portfolio](https://your-portfolio-url.com)  
-*(Replace with your live deployment URL after hosting on Vercel/Netlify)*
+[View Portfolio](https://portfolio.vercel.app/)  
 
 ---
 
@@ -53,7 +52,7 @@ Animations are implemented with **Framer Motion**, and all imagery & assets are 
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 Clone the repository:
 
